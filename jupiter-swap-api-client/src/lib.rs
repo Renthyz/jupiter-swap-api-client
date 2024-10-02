@@ -10,9 +10,17 @@ mod serde_helpers;
 pub mod swap;
 pub mod transaction_config;
 
+const BASE_PATH: &str = "https://quote-api.jup.ag/v6";
+
 #[derive(Clone)]
 pub struct JupiterSwapApiClient {
     pub base_path: String,
+}
+
+impl Default for JupiterSwapApiClient {
+    fn default() -> Self {
+        Self { base_path: BASE_PATH.to_string() }
+    }
 }
 
 async fn check_is_success(response: Response) -> Result<Response> {
