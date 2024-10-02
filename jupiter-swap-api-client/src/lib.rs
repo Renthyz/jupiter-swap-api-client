@@ -10,7 +10,7 @@ mod serde_helpers;
 pub mod swap;
 pub mod transaction_config;
 
-const BASE_PATH: &str = "https://quote-api.jup.ag/v6";
+pub const BASE_PATH: &str = "https://quote-api.jup.ag/v6";
 
 #[derive(Clone)]
 pub struct JupiterSwapApiClient {

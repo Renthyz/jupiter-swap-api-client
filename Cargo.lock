@@ -1885,6 +1885,7 @@ dependencies = [
  "serde_qs",
  "solana-account-decoder",
  "solana-sdk",
+ "tokio",
 ]
 
 [[package]]

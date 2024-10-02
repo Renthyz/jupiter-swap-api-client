@@ -1,8 +1,5 @@
 [workspace]
-members = [
-    "jupiter-swap-api-client",
-    "example",
-]
+members = ["jupiter-swap-api-client", "example"]
 
 [workspace.package]
 edition = "2021"
@@ -11,3 +8,5 @@ edition = "2021"
 solana-sdk = "*"
 solana-client = "*"
 solana-account-decoder = "*"
+
+tokio = { version = "1", features = ["full"] }
