@@ -5,8 +5,8 @@ description = ""
 edition = { workspace = true }
 
 [dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { workspace = true }
 jupiter-swap-api-client = { path = "../jupiter-swap-api-client" }
 solana-sdk = { workspace = true }
 solana-client = { workspace = true }
-bincode = "1.3.3"
+bincode = "*"

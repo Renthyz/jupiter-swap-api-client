@@ -9,4 +9,4 @@ solana-sdk = "*"
 solana-client = "*"
 solana-account-decoder = "*"
 
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "*", features = ["full"] }
